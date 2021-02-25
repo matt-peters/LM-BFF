@@ -607,7 +607,8 @@ compute_metrics_mapping = {
     "qnli": glue_compute_metrics,
     "rte": glue_compute_metrics,
     "wnli": glue_compute_metrics,
-    "snli": glue_compute_metrics,
+    #"snli": glue_compute_metrics,
+    "snli": text_classification_metrics,  # uses accuracy
     "mr": text_classification_metrics,
     "sst-5": text_classification_metrics,
     "subj": text_classification_metrics,
